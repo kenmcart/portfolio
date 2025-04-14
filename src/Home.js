@@ -101,10 +101,10 @@ function Home() {
     <div className="app">
       <header className="app-header">
         <div className="navbar"> 
-          <a href="/" className="selected">Home</a>
-          <a href="/Projects">Projects</a>
-          <a href="/Blogs">Blogs</a>
-          <a href="/Contact">Contact</a>
+          <a href="/portfolio/" className="selected">Home</a>
+          <a href="/portfolio/Projects">Projects</a>
+          <a href="/portfolio/Blogs">Blogs</a>
+          <a href="/portfolio/Contact">Contact</a>
         </div>
         <div className="info">
           <h1><TypingAnimation text="Kennedy McCarthy"/></h1>

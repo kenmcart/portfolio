@@ -48,10 +48,10 @@ function Projects() {
     <div className="app">
       <header className="app-header">
         <div className="navbar"> 
-          <a href="/">Home</a>
-          <a href="/Projects" className="selected">Projects</a>
-          <a href="/Blogs">Blogs</a>
-          <a href="/Projects">Contact</a>
+          <a href="/portfolio/">Home</a>
+          <a href="/portfolio/Projects" className="selected">Projects</a>
+          <a href="/portfolio/Blogs">Blogs</a>
+          <a href="/portfolio/Projects">Contact</a>
         </div>
 
         <div className="mobile-container">

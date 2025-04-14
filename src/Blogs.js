@@ -51,10 +51,10 @@ function Blogs() {
     <div className="app">
       <header className="app-header short">
         <div className="navbar"> 
-          <a href="/">Home</a>
-          <a href="/Projects">Projects</a>
-          <a href="/Blogs" className="selected">Blogs</a>
-          <a href="/Contact">Contact</a>
+          <a href="/portfolio/">Home</a>
+          <a href="/portfolio/Projects">Projects</a>
+          <a href="/portfolio/Blogs" className="selected">Blogs</a>
+          <a href="/portfolio/Contact">Contact</a>
         </div>
         <h1> Winter 2025 Wolverinesoft Developer Blog</h1>
       </header>
