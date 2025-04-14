@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build" ,
     "deploy": "gh-pages -d build",
-    "homepage": "https://kenmcart.github.io/portfolio/"
+    "homepage": "https://kenmcart.github.io/portfolio"
   },
   "eslintConfig": {
     "extends": [
