@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
+import {Link} from 'react-router-dom';
 
 function FadeOnScroll({ children }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,10 +46,10 @@ function Projects() {
     <div className="app">
       <header className="app-header">
         <div className="navbar"> 
-          <a href="/portfolio/">Home</a>
-          <a href="/portfolio/Projects">Projects</a>
-          <a href="/portfolio/Blogs">Blogs</a>
-          <a href="/portfolio/Contact" className="selected">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/Projects">Projects</Link>
+          <Link to="/Blogs">Blogs</Link>
+          <Link to="/Contact" className="selected">Contact</Link>
         </div>
         <h1>Contact Info</h1>
       </header>

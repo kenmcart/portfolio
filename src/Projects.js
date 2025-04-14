@@ -3,6 +3,7 @@ import gameVid from './images/turtletap.mp4'
 import gameVid2 from './images/origamiarcade.mp4'
 import flower from './images/flower.PNG'
 import React, { useState, useEffect, useRef } from 'react';
+import {Link} from 'react-router-dom';
 
 function FadeOnScroll({ children }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -48,10 +49,10 @@ function Projects() {
     <div className="app">
       <header className="app-header">
         <div className="navbar"> 
-          <a href="/portfolio/">Home</a>
-          <a href="/portfolio/Projects" className="selected">Projects</a>
-          <a href="/portfolio/Blogs">Blogs</a>
-          <a href="/portfolio/Projects">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/Projects" className="selected">Projects</Link>
+          <Link to="/Blogs">Blogs</Link>
+          <Link to="/Contact">Contact</Link>
         </div>
 
         <div className="mobile-container">

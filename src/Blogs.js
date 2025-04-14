@@ -6,6 +6,7 @@ import info from './images/info-menu.png'
 import flowchart from './images/flowchart.png'
 import gameVid from './images/popups.mp4'
 import React, { useState, useEffect, useRef } from 'react';
+import {Link} from 'react-router-dom';
 
 function FadeOnScroll({ children }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,10 +52,10 @@ function Blogs() {
     <div className="app">
       <header className="app-header short">
         <div className="navbar"> 
-          <a href="/portfolio/">Home</a>
-          <a href="/portfolio/Projects">Projects</a>
-          <a href="/portfolio/Blogs" className="selected">Blogs</a>
-          <a href="/portfolio/Contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/Projects">Projects</Link>
+          <Link to="/Blogs" className="selected">Blogs</Link>
+          <Link to="/Contact">Contact</Link>
         </div>
         <h1> Winter 2025 Wolverinesoft Developer Blog</h1>
       </header>

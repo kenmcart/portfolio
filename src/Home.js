@@ -16,6 +16,7 @@ import gameVid2 from './images/dragonisvideo.mp4'
 import './App.css';
 
 import React, { useState, useEffect, useRef } from 'react';
+import {Link} from 'react-router-dom';
 
 var inProgress = 0;
 var currentImage = 0;
@@ -101,10 +102,10 @@ function Home() {
     <div className="app">
       <header className="app-header">
         <div className="navbar"> 
-          <a href="/portfolio/" className="selected">Home</a>
-          <a href="/portfolio/Projects">Projects</a>
-          <a href="/portfolio/Blogs">Blogs</a>
-          <a href="/portfolio/Contact">Contact</a>
+          <Link to="/" className="selected">Home</Link>
+          <Link to="/Projects">Projects</Link>
+          <Link to="/Blogs">Blogs</Link>
+          <Link to="/Contact">Contact</Link>
         </div>
         <div className="info">
           <h1><TypingAnimation text="Kennedy McCarthy"/></h1>
@@ -131,8 +132,8 @@ function Home() {
               onMouseEnter={(event) => {
                 if (inProgress === 1) {return}
                 inProgress = 1;
-                event.target.style.animation = 'photo-spin 1.5s ease-in-out infinite'
-                setTimeout(ImageSwitch, 750)
+                event.target.style.animation = 'photo-spin .8s ease-in-out infinite'
+                setTimeout(ImageSwitch, 400)
               }}
               onAnimationIterationCapture={(event) => {
                 event.target.style.animation = 'none'
