@@ -237,9 +237,15 @@ function Blogs() {
             <h5>Dungeon hifi, Apr 20, 2025</h5>
 
             <p><i>Dungeon hifi</i></p>
-            <p>With the new dungeon minigame implementated, I worked on adding the hifi for the game. 
+            <p>With the new dungeon minigame implementated, I worked on adding the hifi for the game from Figma. This also involved cleaning up the dungeon system
+               for its release. 
             </p>
             <img src={hifi} height="265px" alt="Dungeon hifi"></img>
+
+            <p><i>Gitlab</i></p>
+            <p>This week came with a lot of new Gitlab requests, since everybody is finishing up their last bits of work. This meant more merge conflicts had to
+               be dealt with, and more time than usual was spent making sure the main branch was working properly.
+            </p>
 
             <p><i>Game polishing</i></p>
             <p>With the game showcase coming up, we had to polish the game from bugs and other code-related issues before releasing it as a demo.
