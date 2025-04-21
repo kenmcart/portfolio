@@ -28,12 +28,17 @@ a {
 
 .photo {
   animation: photo-move 5s ease-in-out infinite;
+  min-width: 25vw;
 }
 
-.photo img {
-  border-radius: 50%;
-  max-width: 25vw;
+#change {
   box-shadow: 4px 4px 4px #3a3838;
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+  background-image: url('/src/images/me.jpeg');
+  background-size: 100%;
+  transition: background-image 1s ease-in-out;
 }
 
 .gallery {
@@ -189,6 +194,7 @@ video:hover {
   border-radius: 5%;
   color: black;
   text-shadow: none;
+  box-shadow: 4px 4px 4px #3a3838;
 }
 
 .card img, .card video{

@@ -93,7 +93,8 @@ function ImageSwitch(){
   while (rand === currentImage) {
     rand = getRandomInt(meArray.length - 1);
   }
-  toChange.src = meArray[rand];
+
+  toChange.style.backgroundImage = `url(${meArray[rand]})`;
   currentImage = rand;
 }
 
@@ -132,14 +133,15 @@ function Home() {
               onMouseEnter={(event) => {
                 if (inProgress === 1) {return}
                 inProgress = 1;
-                event.target.style.animation = 'photo-spin .8s ease-in-out infinite'
-                setTimeout(ImageSwitch, 400)
+                
+                event.target.style.animation = 'photo-spin 1.5s ease-in-out infinite'
+                setTimeout(ImageSwitch, 250);
               }}
               onAnimationIterationCapture={(event) => {
                 event.target.style.animation = 'none'
                 inProgress = 0;
               }}>
-            <img src={me} id="change" alt="Kennedy"/>
+            <div id="change"/> 
           </div>
         </div>
       </header>

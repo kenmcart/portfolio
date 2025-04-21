@@ -3,6 +3,7 @@ import gdc from './images/gdc.jpg'
 import notion from './images/notion.png'
 import party from './images/party.png'
 import info from './images/info-menu.png'
+import hifi from './images/hifi.png'
 import flowchart from './images/flowchart.png'
 import gameVid from './images/popups.mp4'
 import React, { useState, useEffect, useRef } from 'react';
@@ -227,6 +228,28 @@ function Blogs() {
                on Studio work, managing the Gitlab and working on the implementation/reconsideration of the dungeon generation. I spent 4 hours in meetings- 2 hours in both the studio
                and directors meetings. I also spent 5 hours on outside work for the studio. On the week of 03/31/25-04/06/25, I spent 4 hours in meetings again, and another 5 hours on
                outside work and bug fixes.
+            </p>
+          </div>
+          </FadeOnScroll>
+          <FadeOnScroll>
+          <div className="card">
+            <h2>DEV BLOG #6</h2>
+            <h5>Dungeon hifi, Apr 20, 2025</h5>
+
+            <p><i>Dungeon hifi</i></p>
+            <p>With the new dungeon minigame implementated, I worked on adding the hifi for the game. 
+            </p>
+            <img src={hifi} height="265px" alt="Dungeon hifi"></img>
+
+            <p><i>Game polishing</i></p>
+            <p>With the game showcase coming up, we had to polish the game from bugs and other code-related issues before releasing it as a demo.
+            </p>
+
+            <p><i>Time breakdown</i></p>
+            <p>I am taking 3 credits of MDP this semester, so I must spend 9 hours a week on Studio-related tasks. On the week of 04/07/25-04/13/25 I spent 9 hours
+               on Studio work, managing the Gitlab and working on implementing the dungeon game hifi. I spent 4 hours in meetings- 2 hours in both the studio
+               and directors meetings. I also spent 5 hours on outside work for the studio. On the week of 04/14/25-04/20/25, I spent 4 hours in meetings again, and another 5 hours on
+               outside work and bug fixes/general polishing.
             </p>
           </div>
           </FadeOnScroll>
