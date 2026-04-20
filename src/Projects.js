@@ -1,6 +1,7 @@
 import './App.css';
 import gameVid from './images/turtletap.mp4'
 import gameVid2 from './images/origamiarcade.mp4'
+import gameVid3 from './images/destination.mp4'
 import flower from './images/flower.PNG'
 import React, { useState, useEffect, useRef } from 'react';
 import {Link} from 'react-router-dom';
@@ -55,10 +56,10 @@ function Projects() {
           <Link to="/Contact">Contact</Link>
         </div>
 
+        <FadeOnScroll>
         <div className="mobile-container">
             <h1>Mobile Game Projects</h1>
             <p>Hover over images to see gameplay!</p><br></br>
-            <FadeOnScroll>
             <div className="list">
                 <div className="list-item">
                   <div className="list-half">
@@ -99,8 +100,26 @@ function Projects() {
                   </video>
                 </div>
             </div>
-            </FadeOnScroll>
         </div>
+        
+        <div class="engine">
+            <h1>Destination Engine</h1>
+            <p>The custom game engine I made over the course of a semester (Click to play demonstration)</p>
+            <video
+              loop
+              muted
+              playsInline
+              onClick={(e) => {
+                e.target.muted = false;
+                e.target.play().catch(() => {});
+              }}>
+              <source src={gameVid3} type="video/mp4" />
+            </video>   
+        </div>
+        <div>
+          <p>Technologies Used: C++, Lua, GLM, LuaBridge, SDL, Box2D, ImGUI</p>
+        </div>
+        </FadeOnScroll>
       </header>
       <div className="app-body"></div>
       <footer>

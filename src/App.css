@@ -52,6 +52,14 @@ a {
   margin-bottom: 15vh;
 }
 
+.engine {
+  width: 85vw;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}
+
 .gallery img {
   max-width: 20vw;
   border-radius: 10%;
